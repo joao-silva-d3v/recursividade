@@ -1,0 +1,25 @@
+body {
+    background-color: #f8f9fa; /* Fundo suave */
+  }
+  
+  .card {
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #007bff; /* Borda azul */
+  }
+  
+  .form-control {
+    border-radius: 5px; /* Bordas arredondadas para campos */
+  }
+  
+  .btn-primary {
+    border-radius: 5px; /* Bordas arredondadas para botões */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
+  .result {
+    background-color: #e7f1ff; /* Fundo claro para resultado */
+    border: 1px solid #007bff; /* Borda azul */
+    border-radius: 5px;
+    padding: 10px; 
+  }
+  

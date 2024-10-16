@@ -1,0 +1,61 @@
+<div class="container mt-4">
+    <h3 class="text-center mb-3">Calculadora Recursiva</h3>
+  
+    <div class="card p-4 shadow">
+      <div class="mb-4">
+        <h4 class="result text-center" style="font-size: 1.2rem; color: #007bff;">Resultado: {{ resultado }}</h4>
+      </div>
+  
+      <div class="mb-3">
+        <label for="fatorial" class="form-label">Cálculo de Fatorial</label>
+        <div class="row">
+          <div class="col">
+            <input type="number" id="fatorial" [(ngModel)]="numFatorial" placeholder="Fatorial" class="form-control" style="text-align: center; border: 1px solid #007bff;">
+          </div>
+          <div class="col-auto">
+            <button (click)="calcular('fatorial', numFatorial)" class="btn btn-primary w-100">Calcular</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="fibonacci" class="form-label">Cálculo de Fibonacci</label>
+        <div class="row">
+          <div class="col">
+            <input type="number" id="fibonacci" [(ngModel)]="numFibonacci" placeholder="Fibonacci" class="form-control" style="text-align: center; border: 1px solid #007bff;">
+          </div>
+          <div class="col-auto">
+            <button (click)="calcular('fibonacci', numFibonacci)" class="btn btn-primary w-100">Calcular</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="produto1" class="form-label">Cálculo de Produto</label>
+        <div class="row">
+          <div class="col">
+            <input type="number" id="produto1" [(ngModel)]="numProduto1" placeholder="Num 1" class="form-control" style="text-align: center; border: 1px solid #007bff;">
+          </div>
+          <div class="col">
+            <input type="number" id="produto2" [(ngModel)]="numProduto2" placeholder="Num 2" class="form-control" style="text-align: center; border: 1px solid #007bff;">
+          </div>
+          <div class="col-auto">
+            <button (click)="calcular('produto', numProduto1, numProduto2)" class="btn btn-primary w-100">Calcular</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="soma" class="form-label">Cálculo de Soma</label>
+        <div class="row">
+          <div class="col">
+            <input type="number" id="soma" [(ngModel)]="numSoma" placeholder="Soma até" class="form-control" style="text-align: center; border: 1px solid #007bff;">
+          </div>
+          <div class="col-auto">
+            <button (click)="calcular('soma', numSoma)" class="btn btn-primary w-100">Calcular</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
